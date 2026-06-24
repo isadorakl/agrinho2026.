@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Economia de Água na Irrigação</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Economia de Água na Irrigação</h1>
+        
+        <section class="intro">
+            <p>
+                A irrigação é uma das maiores consumidoras de água na agricultura. 
+                Utilizar técnicas de irrigação eficientes é essencial para garantir a sustentabilidade dos recursos hídricos, reduzir custos e proteger o meio ambiente.
+            </p>
+        </section>
+
+        <section class="informacoes">
+            <h2>O que é irrigação eficiente?</h2>
+            <p>
+                Irrigação eficiente envolve o uso de sistemas que minimizam perdas de água e entregam a quantidade exata de água às plantas. 
+                Técnicas como irrigação por gotejamento, microaspersores e sistemas automatizados aumentam a eficiência do uso da água.
+            </p>
+
+            <h2>Tipos de sistemas de irrigação</h2>
+            <div class="imagens-tipos">
+                <div class="tipo">
+                    <img src="https://images.unsplash.com/photo-1577868801012-7f7d2f4f9d4f?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Irrigação por aspersão" />
+                    <p>Irrigação por aspersão</p>
+                </div>
+                <div class="tipo">
+                    <img src="https://images.unsplash.com/photo-1616762738875-8b791b8d7f1b?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Irrigação por gotejamento" />
+                    <p>Irrigação por gotejamento</p>
+                </div>
+            </div>
+
+            <h2>Dados atuais sobre consumo de água na agricultura</h2>
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Gráfico de consumo de água na agricultura" class="imagem-gráfico" />
+            <p>
+                Segundo a FAO, a agricultura é responsável por cerca de 70% do uso global de água doce. 
+                No Brasil, esse percentual chega a aproximadamente 60%, demonstrando a importância de adotar práticas mais sustentáveis.
+            </p>
+
+            <h2>Benefícios ambientais e econômicos</h2>
+            <ul>
+                <li>Conserva os recursos hídricos essenciais para a biodiversidade.</li>
+                <li>Reduz o consumo de energia, pois menos água precisa ser bombeada.</li>
+                <li>Minimiza o impacto ambiental e evita a salinização do solo.</li>
+                <li>Reduz custos de irrigação e aumenta a rentabilidade da produção agrícola.</li>
+            </ul>
+
+            <h2>Exemplo de sucesso na economia de água</h2>
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.1&auto=format&fit=crop&w=800&q=80" alt="Fazenda com irrigação eficiente" class="imagem-exemplo" />
+            <p>
+                Uma fazenda de 15 hectares reduziu seu consumo de água de 800 mm para 500 mm ao adotar um sistema de irrigação por gotejamento, economizando aproximadamente 4.500 metros cúbicos por ano, além de melhorar a produtividade.
+            </p>
+
+            <h2>Dicas adicionais para economia de água</h2>
+            <ul>
+                <li>Realize manutenções periódicas nos sistemas de irrigação para evitar vazamentos.</li>
+                <li>Capacite os trabalhadores sobre boas práticas de irrigação.</li>
+                <li>Utilize softwares de gestão agrícola para otimizar irrigação.</li>
+                <li>Capte água da chuva e armazene para uso posterior.</li>
+            </ul>
+        </section>
+
+        <section class="calculo">
+            <form id="calcForm">
+                <h2>Faça seu cálculo</h2>
+                <label for="area">Área da plantação (hectares):</label>
+                <input type="number" id="area" min="0" step="0.01" required />
+
+                <label for="tradicional">Água usada com método tradicional (mm):</label>
+                <input type="number" id="tradicional" min="0" step="0.01" required />
+
+                <label for="eficiente">Água usada com método eficiente (mm):</label>
+                <input type="number" id="eficiente" min="0" step="0.01" required />
+
+                <button type="submit">Calcular Economia</button>
+            </form>
+            <div id="resultado" class="resultado"></div>
+        </section>
+
+        <section class="referencias">
+            <h2>Recursos e referências</h2>
+            <ul>
+                <li><a href="https://www.fao.org/water/en/" target="_blank">FAO - Organização das Nações Unidas para Alimentação e Agricultura</a></li>
+                <li><a href="https://www.ana.gov.br/" target="_blank">Agência Nacional de Águas (ANA) - Brasil</a></li>
+                <li><a href="https://www.agricultura.gov.br/assuntos/agua" target="_blank">Ministério da Agricultura - Recursos Hídricos</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
